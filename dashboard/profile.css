@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #000;
+    --text-color: black;
+    --secondtext-color:#ffffff;
+    --bg-color:rgb(157, 199, 248);
+    --image-color: rgba(0,0,0,0.2) ;
+    --box-shadow: 2px 5px 10px rgba(37, 36, 36, 0.836) ;
+}
+.dashpage{
+    width: 100%;
+    height: 100vh;
+    background: lightgray;
+    display: flex;
+}
+.profile-menu{
+    width: 24%;
+    height: 100vh;
+    padding: 10px;
+}
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--bg-color);
+    line-height: 1.5em;
+}
+.name-content{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.photo{
+    width: 50px;
+    height: 50px;
+    background: #dbd8d8;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.name{
+    margin-right: 50px;
+}
+.name h3{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.name p{
+    color: rgb(147, 233, 18);
+    position: relative;
+    margin-left: 4px;
+}
+.menu-bar img{
+    filter: invert(1);
+    cursor: pointer;
+    width: 27px;
+}
+.log-detail{
+    width: 240px;
+    height: 150px;
+    top: 109px;
+    left: 78px;
+    border-radius: 3px;
+    background: var(--bg-color);
+    position: absolute;
+    padding: 10px;
+    /* display: none; */
+}
+.log-detail ul li{
+    display: block;
+    line-height: 1.7em;
+}
+.log-detail ul li:last-child{
+    width: 100px;
+    padding: 5px;
+    background: #000;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 60px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.log-detail ul li:last-child:hover{
+    background: rgb(4, 181, 235);
+}
+.log-detail ul li a{
+    font-size: 15px;
+    font-size: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondtext-color);
+}
+.log-detail ul li a:hover{
+    color: var(--text-color);
+}
+.info-page{
+    width: 100%;
+    height: 81%;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-page .profile-details{
+    width: 100%;
+    height: 56vh;
+}
+.info-page .profile-details ul{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    background-color: rgb(238, 241, 241);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.info-page .profile-details ul li{
+    width: 100%;
+    line-height: 2em;
+    margin-top: 1px;
+    padding: 10px 10px;
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+}
+.info-page .profile-details ul li:hover{
+    background: var(--bg-color);
+}
+.info-page .profile-details ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(94, 92, 92);
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    /* padding: 0px 30px; */
+    width: 100%;
+    height: 50px;
+}
+.social-media i{
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    text-align: center;
+    background: var(--secondtext-color);
+    cursor: pointer;
+    transition: 40ms;
+}
+.social-media i:nth-child(1){
+    width: 40px;
+}
+.social-media  i:hover{
+    background: var(--bg-color);
+    transform: translateY(-10px);
+}
+
+.databoard{
+    width: 76%;
+    height: 100vh;
+    padding: 10px;
+}
+.dataview{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.change-password{
+    width: 35%;
+    padding: 10px;
+    background: #000;
+    position: relative;
+    top: 6em;
+    margin: auto;
+    /* display: none; */
+}
+.change-password input{
+    width: 100%;
+    height: 40px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+}
+.change-password button{
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 40px 0px 110px;
+    background: var(--secondtext-color);
+    border-radius: 20px;
+    border: 1px solid var(--secondtext-color);
+    transition: 0.3s;
+}
+.change-password button:hover{
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+}
